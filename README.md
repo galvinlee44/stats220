@@ -8,4 +8,4 @@
 - I am taking STATS 220 because learning statistics can be helpful for my future and this statistics course contains some aspects of computer science so it can also relevant to my major
 - I am interested in learning about the process of using code to create data science products
 
-A meme that captures how I currently feel about my university studies is ![](https://media.giphy.com/media/gKez4awKPMG9cWT4OM/giphy.gif)
+A meme that captures how I currently feel about my university studies is ![](https://gifdb.com/images/high/puppy-golden-retriever-wink-rht2r7l3d2saorlc.gif)
