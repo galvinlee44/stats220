@@ -9,4 +9,4 @@
 - I am interested in learning about the process of using code to create data science products
 
 A meme that captures how I currently feel about my university studies is ![]
-(https://gifdb.com/images/high/puppy-golden-retriever-wink-rht2r7l3d2saorlc.webp)
+(https://media.giphy.com/media/gKez4awKPMG9cWT4OM/giphy.gif)
