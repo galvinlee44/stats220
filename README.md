@@ -13,7 +13,6 @@
 2. *Listening to music*
 3. *Going to the gym*
 
-Here is a link to my favourite basketball team: [Thunder Up!](https://www.nba.com/thunder/).
-I am proud of them for winning the 2025 NBA Championship.
+Here is a link to my favourite basketball team: [Thunder Up!](https://www.nba.com/thunder/) 
 
 **A meme that captures how I currently feel about my university studies is:** ![](https://gifdb.com/images/high/puppy-golden-retriever-wink-rht2r7l3d2saorlc.gif)
