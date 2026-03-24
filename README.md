@@ -10,7 +10,7 @@
   
 **My hobbies are:**
 1. *Watching NBA basketball games*
-2. *Watching movies*
+2. *Listening to music*
 3. *Going to the gym*
 
 Here is a link to my favourite basketball team: [Thunder Up!](https://www.nba.com/thunder/).
