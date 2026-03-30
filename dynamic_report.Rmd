@@ -5,7 +5,24 @@ output: html_fragment
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+```
 
+```{css}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+  background: linear-gradient(to right, #f5c23a,
+  #fa7e1e, #d62976, #962fbf);
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-style: italic;
+}
+```
+
+## My dynamic report is tracking the nature of the first instagram content that shows up on my feed.
+I am analysing what the content is generally about and its type. I am also tracking my engagement level for this content.
+
+```{r}
 # Load required library
 library(tidyverse)
 
@@ -47,28 +64,7 @@ logged_data %>%
        x = "Content Type",
        y = "Count")
 
-# Print dynamic comments
-comment_avg
-comment_max
 
-```
-
-```{css}
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
-body {
-  background: linear-gradient(to right, #f5c23a,
-  #fa7e1e, #d62976, #962fbf);
-  color: white;
-  font-family: 'Indie Flower', cursive;
-  font-style: italic;
-}
-```
-
-## My dynamic report is tracking the nature of the first instagram content that shows up on my feed.
-I am analysing what the content is generally about and its type. I am also tracking my engagement level for this content.
-
-```{r}
 pets <- c("cat", "dog", "turtle", "rabbit")
 best_pet <- pets[1]
 
