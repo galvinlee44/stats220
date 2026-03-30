@@ -51,9 +51,6 @@ logged_data %>%
 comment_avg
 comment_max
 
-# Display plots
-plot1
-plot2
 ```
 
 ```{css}
