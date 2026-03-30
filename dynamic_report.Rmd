@@ -1,0 +1,82 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+
+# Load required library
+library(tidyverse)
+
+# Load data from Google Sheets CSV
+csv_file <- "https://docs.google.com/spreadsheets/d/e/2PACX-1vRqvsXBAkMU7dUE4QdGIJfRN_CdqhbZW1VSrF4h_YFWuEG6fTthtBCTDVbZlTM333oHPXT01J-V7e18/pub?gid=1240359880&single=true&output=csv"
+logged_data <- read_csv(csv_file) %>%
+  rename(content_type = 2,
+         content_category = 3,
+         time_seconds = 4,
+         liked = 5)
+
+# Summary values
+avg_time <-mean(logged_data$time_seconds)
+max_time <-max(logged_data$time_seconds)
+
+# Dynamic comment about average time
+comment_avg <- paste("On average, I spent", round(avg_time,1), "seconds viewing the first content shown to me.")
+
+# Dynamic comment about maximum time
+comment_max <- paste("The longest time I spent on a single content observation was", max_time, "seconds.")
+
+#Print the comments
+print(comment_avg)
+print(comment_max)
+
+# Bar chart 1: Content categories
+logged_data %>%
+  ggplot() +
+  geom_bar(aes(x = content_category), fill = "#fa7e1e")  +
+  labs(title = "Distribution of Content Categories",
+       x = "Content Category",
+       y = "Count")
+
+# Bar chart 2: Content type
+logged_data %>%
+  ggplot() +
+  geom_bar(aes(x = content_type), fill = "#d62976") +
+  labs(title = "Distribution of Content Types",
+       x = "Content Type",
+       y = "Count")
+
+# Print dynamic comments
+comment_avg
+comment_max
+
+# Display plots
+plot1
+plot2
+```
+
+```{css}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+  background: linear-gradient(to right, #f5c23a,
+  #fa7e1e, #d62976, #962fbf);
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  font-style: italic;
+}
+```
+
+## My dynamic report is tracking the nature of the first instagram content that shows up on my feed.
+I am analysing what the content is generally about and its type. I am also tracking my engagement level for this content.
+
+```{r}
+pets <- c("cat", "dog", "turtle", "rabbit")
+best_pet <- pets[1]
+
+```
+
+The best pet to have is a `r best_pet` of course!
+
+![](https://c.tenor.com/-qBsG1HwR4oAAAAC/tenor.gif)
