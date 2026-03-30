@@ -47,7 +47,7 @@ comment_max <- paste("The longest time I spent on a single content observation w
 
 #Print the comments
 print(comment_avg)
-print("This suggests that the initial content is reasonably engaging, as it holds attention for a moderate amount of time rather than being quickly skipped."
+print("This suggests that the initial content is reasonably engaging, as it holds attention for a moderate amount of time rather than being quickly skipped.")
 print(comment_max)
 print("This indicates that some content was highly engaging, as it was viewed for significantly longer than the average.")
 
