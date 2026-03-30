@@ -40,10 +40,10 @@ avg_time <-mean(logged_data$time_seconds)
 max_time <-max(logged_data$time_seconds)
 
 # Dynamic comment about average time
-comment_avg <- paste("On average, I spent", round(avg_time,1), "seconds viewing the first content shown to me.")
+comment_avg <- paste("On average, I spent", round(avg_time,1), "seconds viewing the first content shown to me. This suggests that the initial content is reasonably engaging, as it holds attention for a moderate amount of time rather than being quickly skipped.")
 
 # Dynamic comment about maximum time
-comment_max <- paste("The longest time I spent on a single content observation was", max_time, "seconds.")
+comment_max <- paste("The longest time I spent on a single content observation was", max_time, "seconds. This indicates that some content was highly engaging, as it was viewed for significantly longer than the average.")
 
 #Print the comments
 print(comment_avg)
